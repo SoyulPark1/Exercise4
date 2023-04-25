@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 4</title>
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Itim', cursive;
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Ysabeau', sans-serif;
+}
+p{
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Itim', cursive;
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Ysabeau', sans-serif;
+}
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Itim', cursive;
+  font-family: 'Roboto Slab', serif;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  background-color: lightgrey;
+}
+img{
+	width: 50%;
+	height: 100%;
+}
+h2{
+	font-size: 35px;
+}
+</style>
+<body>
+	<h1>Converting measurements</h1>
+		<p>converting CM to M</p>
+	<header>1 cm = 0.01 m</header>
+
+	<form>
+		Centimeters<input type="text" id="num1">
+		<button type="submit" onclick="Converting()">Convert</button>
+	</form>
+<article>
+	<p>One centimeter is a unit of length in the metric system.
+	It is equivalent to one hundredth of a meter.
+	Therefore, 1 centimeter is equal to 0.01 meters.</p>
+</article><br>
+
+<img src="https://www.inchcalculator.com/a/img/unit-conversion/meter-to-centimeter-conversion-scale.png"></img>
+	<script type="text/javascript">
+		function Converting(){
+			let num1 = document.getElementById("num1").value;
+			let division = Number( num1 / 100);
+			window.alert("The measurement of centimeter in meter is : " + division)
+		}
+	</script>
+</body>
+</html>
